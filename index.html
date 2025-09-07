@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murano Residences - Alto Padrão de Acabamento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="images/logo-murano.png" alt="Murano Residences">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#fotos">Fotos</a></li>
+                    <li><a href="#lazer">Lazer</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#planta-master">Planta Master</a></li>
+                    <li><a href="#plantas">Plantas</a></li>
+                    <li><a href="#local">Local</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <img src="images/webdoor.jpg" alt="Murano Residences" class="hero-desktop">
+            <img src="images/webdoor-mob.jpg" alt="Murano Residences" class="hero-mobile">
+        </div>
+        <div class="hero-content">
+            <div class="hero-form">
+                <h2>Murano Residences</h2>
+                <p>Alto padrão de acabamento para você e sua família</p>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required>
+                    <button type="submit" class="btn-primary">
+                        <span>SOLICITAR INFORMAÇÕES</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.105" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confira Section -->
+    <section class="confira" id="fotos">
+        <div class="container">
+            <h2>Confira o que<br>ESPERA POR VOCÊ<br>E SUA FAMÍLIA!</h2>
+            <div class="confira-gallery">
+                <div class="gallery-grid">
+                    <div class="gallery-item main-image">
+                        <img src="images/MURANO 01 FACHADA.jpg" alt="Fachada do Empreendimento">
+                        <span>Clique para ampliar</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/MURANO 03 LOBBY.jpg" alt="Lobby">
+                        <span>Lobby</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/MURANO 10 SALA.jpg" alt="Sala de Estar">
+                        <span>Sala de Estar</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/MURANO 11 VARANDA.jpg" alt="Varanda Gourmet">
+                        <span>Varanda Gourmet</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/MURANO 12 SUÍTE.jpg" alt="Suíte Master">
+                        <span>Suíte Master</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Lazer Section -->
+    <section class="lazer" id="lazer">
+        <div class="container">
+            <h2>OPÇÕES DE LAZER<br>PARA TODAS<br>AS IDADES.</h2>
+            <div class="lazer-grid">
+                <div class="lazer-item">
+                    <img src="images/MURANO 05 PISCINA.jpg" alt="Piscina adulto borda infinita">
+                    <h3>Piscina adulto borda infinita</h3>
+                </div>
+                <div class="lazer-item">
+                    <img src="images/MURANO 07 PLAY.jpg" alt="Piscina infantil">
+                    <h3>Piscina infantil</h3>
+                </div>
+                <div class="lazer-item">
+                    <img src="images/MURANO 09 SAUNA.jpg" alt="Sauna">
+                    <h3>Sauna</h3>
+                </div>
+                <div class="lazer-item">
+                    <img src="images/MURANO 06 FITNESS.jpg" alt="Espaço fitness">
+                    <h3>Espaço fitness</h3>
+                </div>
+                <div class="lazer-item">
+                    <img src="images/MURANO 04 FESTAS.jpg" alt="Salão de festas">
+                    <h3>Salão de festas</h3>
+                </div>
+                <div class="lazer-item">
+                    <img src="images/MURANO 08 CHURRASQUEIRA.jpg" alt="Churrasqueira com forno de pizza">
+                    <h3>Churrasqueira com forno DE PIZZA.</h3>
+                </div>
+                <div class="lazer-item">
+                    <img src="images/MURANO 07 PLAY.jpg" alt="Espaço infantil">
+                    <h3>Espaço infantil</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais Section -->
+    <section class="diferenciais" id="diferenciais">
+        <div class="container">
+            <h2>DIFERENCIAIS ÚNICOS QUE IRÃO<br>TRANSFORMAR SUA VIDA E DA SUA FAMÍLIA.</h2>
+            
+            <div class="diferenciais-grid">
+                <div class="diferenciais-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>APARTAMENTO</h3>
+                    <div class="diferenciais-list">
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>COZINHA AMERICANA</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>VARANDA GOURMET</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>2 VAGAS DE GARAGEM</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>PREVISÃO PARA SPLIT</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>PORCELANATO EM TODOS OS CÔMODOS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diferenciais-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3H21V21H3V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 9H15V15H9V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>OPÇÕES DE PLANTA</h3>
+                    <div class="diferenciais-list">
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>3 SUÍTES + OPÇÃO DE 4 QUARTOS</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>3 SUÍTES COMPLETAS</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>3 SUÍTES - SENDO 1 MASTER E 2 CANADENSES</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>UNIDADES GARDEN NO 1º ANDAR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="diferenciais-card">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22S2 16 2 10C2 5.58172 5.58172 2 10 2C12.1217 2 14.1566 2.84285 15.6569 4.34315C17.1571 5.84344 18 7.87827 18 10C18 16 12 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>CONDOMÍNIO</h3>
+                    <div class="diferenciais-list">
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>SEGURANÇA: CFTV, PORTEIRO ELETRÔNICO</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>FECHADURA BIOMÉTRICA NOS APARTAMENTOS</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>ELEVADORES INTELIGENTES</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>PROJETO ÚNICO, APENAS 42 UNIDADES</span>
+                        </div>
+                        <div class="diferenciais-item">
+                            <span class="check-icon">✓</span>
+                            <span>FACHADA COM ACABAMENTO EM PORCELANATO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sustentabilidade">
+                <div class="sustentabilidade-header">
+                    <div class="sustentabilidade-icon">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Diferenciais de Sustentabilidade</h3>
+                </div>
+                <div class="sustentabilidade-grid">
+                    <div class="sustentabilidade-item">
+                        <div class="sustentabilidade-icon-small">💧</div>
+                        <span>Captação de água da chuva</span>
+                    </div>
+                    <div class="sustentabilidade-item">
+                        <div class="sustentabilidade-icon-small">🏺</div>
+                        <span>Cisterna</span>
+                    </div>
+                    <div class="sustentabilidade-item">
+                        <div class="sustentabilidade-icon-small">⚙️</div>
+                        <span>Válvulas dual flux e temporizadores</span>
+                    </div>
+                    <div class="sustentabilidade-item">
+                        <div class="sustentabilidade-icon-small">👁️</div>
+                        <span>Sensor de presença nas áreas comuns</span>
+                    </div>
+                    <div class="sustentabilidade-item">
+                        <div class="sustentabilidade-icon-small">🚴</div>
+                        <span>Bicicletário</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planta Master Section -->
+    <section class="planta-master" id="planta-master">
+        <div class="container">
+            <h2>PLANTA MASTER</h2>
+            <div class="planta-master-content">
+                <div class="planta-master-image">
+                    <img src="images/mapa1.png" alt="Planta Master do Empreendimento">
+                    <div class="planta-overlay">
+                        <span>Clique para ampliar</span>
+                    </div>
+                </div>
+                <div class="planta-master-info">
+                    <h3>Visão Geral do Empreendimento</h3>
+                    <p>O Murano Residences foi projetado com foco na qualidade de vida e sustentabilidade, oferecendo apenas 42 unidades exclusivas com acabamento de alto padrão.</p>
+                    <div class="planta-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">42</span>
+                            <span class="stat-label">Unidades</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Tipos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">1º</span>
+                            <span class="stat-label">Garden</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plantas Section -->
+    <section class="plantas" id="plantas">
+        <div class="container">
+            <h2>PLANTAS DOS APARTAMENTOS</h2>
+            <div class="plantas-grid">
+                <div class="planta-item">
+                    <h3>APTº 01</h3>
+                    <img src="images/AP01.jpg" alt="Apartamento 01">
+                </div>
+                <div class="planta-item">
+                    <h3>APTº 02</h3>
+                    <img src="images/AP02.jpg" alt="Apartamento 02">
+                </div>
+                <div class="planta-item">
+                    <h3>APTº 03</h3>
+                    <img src="images/AP03.jpg" alt="Apartamento 03">
+                </div>
+                <div class="planta-item">
+                    <h3>GARDEN 101</h3>
+                    <img src="images/AP101.jpg" alt="Garden 101">
+                </div>
+                <div class="planta-item">
+                    <h3>GARDEN 102</h3>
+                    <img src="images/AP102.jpg" alt="Garden 102">
+                </div>
+                <div class="planta-item">
+                    <h3>GARDEN 103</h3>
+                    <img src="images/AP103.jpg" alt="Garden 103">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Section -->
+    <section class="local" id="local">
+        <div class="container">
+            <h2>LOCALIZAÇÃO:</h2>
+            <div class="mapa">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.4567890123!2d-43.3656543210!3d-22.7654321098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e5a5b5a5b5a5b%3A0x1234567890abcdef!2sRua%20Hermida%20Cerbino%20-%20Nova%20Igua%C3%A7u%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1678901234567!5m2!1spt-BR!2sbr"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="local-info">
+                <div class="local-details">
+                    <h3>Endereço</h3>
+                    <p>Rua Hermida Cerbino - Nova Iguaçu<br>Rio de Janeiro - RJ</p>
+                </div>
+                <div class="local-details">
+                    <h3>Facilidades Próximas</h3>
+                    <ul>
+                        <li>✓ Centro de Nova Iguaçu (2km)</li>
+                        <li>✓ Estação de Trem (1.5km)</li>
+                        <li>✓ Hospital Geral (3km)</li>
+                        <li>✓ Shopping Nova Iguaçu (4km)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Realização Section -->
+    <section class="realizacao">
+        <div class="container">
+            <h2>REALIZAÇÃO:</h2>
+            <div class="realizacao-content">
+                <div class="realizacao-item">
+                    <img src="images/empresa1.png" alt="Construção">
+                    <h3>Construção</h3>
+                </div>
+                <div class="realizacao-item">
+                    <img src="images/empresa2.png" alt="Desenvolvimento">
+                    <h3>Desenvolvimento</h3>
+                </div>
+                <div class="realizacao-item">
+                    <img src="images/empresa3.png" alt="Arquitetura">
+                    <h3>Arquitetura</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5521987476244" class="whatsapp-btn" target="_blank">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+
+    <script src="js/email-config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
