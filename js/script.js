@@ -208,6 +208,29 @@ function validateEmailInput(value) {
     return emailRegex.test(value);
 }
 
+// Função para abrir modal de imagem
+function openImageModal(imageSrc, title, description) {
+    const modal = document.getElementById('imageModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    
+    modalImage.src = imageSrc;
+    modalImage.alt = title;
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
+    
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Previne scroll da página
+}
+
+// Função para fechar modal
+function closeImageModal() {
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto'; // Restaura scroll da página
+}
+
 // Event listener para o formulário
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('contactForm');
@@ -366,6 +389,61 @@ document.addEventListener('DOMContentLoaded', function() {
                 submitButton.disabled = false;
             }
         });
+    }
+    
+    // Event listeners para modal de imagens
+    const modal = document.getElementById('imageModal');
+    const closeBtn = document.querySelector('.close');
+    
+    // Fechar modal ao clicar no X
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeImageModal);
+    }
+    
+    // Fechar modal ao clicar fora da imagem
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                closeImageModal();
+            }
+        });
+    }
+    
+    // Fechar modal com tecla ESC
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            closeImageModal();
+        }
+    });
+    
+    // Adicionar event listeners para todas as imagens clicáveis
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach(item => {
+        const img = item.querySelector('img');
+        const span = item.querySelector('span');
+        
+        if (img && span) {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', function() {
+                const title = span.textContent;
+                const description = `Imagem do empreendimento Murano Residences - ${title}`;
+                openImageModal(img.src, title, description);
+            });
+        }
+    });
+    
+    // Adicionar event listener para a planta master
+    const plantaMasterImage = document.querySelector('.planta-master-image');
+    if (plantaMasterImage) {
+        const img = plantaMasterImage.querySelector('img');
+        const overlay = plantaMasterImage.querySelector('.planta-overlay span');
+        
+        if (img && overlay) {
+            plantaMasterImage.style.cursor = 'pointer';
+            plantaMasterImage.addEventListener('click', function() {
+                openImageModal(img.src, 'Planta Master', 'Visão geral do empreendimento Murano Residences com todas as unidades e áreas comuns');
+            });
+        }
     }
 });
 
