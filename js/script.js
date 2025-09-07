@@ -417,6 +417,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Adicionar event listeners para todas as imagens clicáveis
+    
+    // 1. Galeria de fotos (já implementada)
     const galleryItems = document.querySelectorAll('.gallery-item');
     galleryItems.forEach(item => {
         const img = item.querySelector('img');
@@ -432,7 +434,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Adicionar event listener para a planta master
+    // 2. Planta Master
     const plantaMasterImage = document.querySelector('.planta-master-image');
     if (plantaMasterImage) {
         const img = plantaMasterImage.querySelector('img');
@@ -445,6 +447,54 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
+    
+    // 3. Áreas de Lazer
+    const lazerItems = document.querySelectorAll('.lazer-item');
+    lazerItems.forEach(item => {
+        const img = item.querySelector('img');
+        const h3 = item.querySelector('h3');
+        
+        if (img && h3) {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', function() {
+                const title = h3.textContent;
+                const description = `Área de lazer do Murano Residences - ${title}`;
+                openImageModal(img.src, title, description);
+            });
+        }
+    });
+    
+    // 4. Plantas dos Apartamentos
+    const plantaItems = document.querySelectorAll('.planta-item');
+    plantaItems.forEach(item => {
+        const img = item.querySelector('img');
+        const h3 = item.querySelector('h3');
+        
+        if (img && h3) {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', function() {
+                const title = h3.textContent;
+                const description = `Planta do ${title} - Murano Residences`;
+                openImageModal(img.src, title, description);
+            });
+        }
+    });
+    
+    // 5. Realização (empresas)
+    const realizacaoItems = document.querySelectorAll('.realizacao-item');
+    realizacaoItems.forEach(item => {
+        const img = item.querySelector('img');
+        const h3 = item.querySelector('h3');
+        
+        if (img && h3) {
+            item.style.cursor = 'pointer';
+            item.addEventListener('click', function() {
+                const title = h3.textContent;
+                const description = `Empresa responsável pela ${title} - Murano Residences`;
+                openImageModal(img.src, title, description);
+            });
+        }
+    });
 });
 
 // Função alternativa usando Formspree (sem configuração)

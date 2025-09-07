@@ -516,6 +516,33 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
+.lazer-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lazer-item:hover::after {
+    content: '🔍 Clique para ampliar';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.lazer-item:hover::after {
+    opacity: 1;
+}
+
 .lazer-item img {
     width: 100%;
     height: 200px;
@@ -873,6 +900,34 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(-5px);
 }
 
+.planta-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.planta-item:hover::after {
+    content: '🔍 Clique para ampliar';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.planta-item:hover::after {
+    opacity: 1;
+}
+
 .planta-item h3 {
     padding: 1.5rem;
     font-size: 1.5rem;
@@ -1142,6 +1197,34 @@ h1, h2, h3, h4, h5, h6 {
 
 .realizacao-item:hover img {
     transform: scale(1.1);
+}
+
+.realizacao-item {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.realizacao-item:hover::after {
+    content: '🔍 Clique para ampliar';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.realizacao-item:hover::after {
+    opacity: 1;
 }
 
 .realizacao-item h3 {
